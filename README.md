@@ -24,6 +24,20 @@ docker build -t Image_name .
 ```
 ### For launch the Jenkins container :
 ```
-docker run -dit --name container_name -p 8081:8080 -v /var/run/docker.sock:/var/run/docker.sock  Image_name
+docker run -it --name container_name -p 8081:8080 -v /var/run/docker.sock:/var/run/docker.sock  Image_name
+```
+#### For running docker inside jenkins container i mount the host system /var/run/docker.sock directory with container system /var/run/docker.sock directory 
+
+### For creating a docker-ce repo run below command
+```
+curl -sSl https://get.docker.com |sh
+```
+### For installing the docker-ce run below command
+```
+yum install docker-ce --nobest
 ```
 
+
+![JOB1](img/job1.jpg)
+![JOB1](img/job1_2.jpg)
+![JOB1](img/job2.jpg)
