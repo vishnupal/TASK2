@@ -39,5 +39,29 @@ yum install docker-ce --nobest
 
 
 ![JOB1](img/job1.jpg)
+
+
+
 ![JOB1](img/job1_2.jpg)
+
+
+
 ![JOB1](img/job2.jpg)
+
+
+![JOB1](img/job3.jpg)
+
+
+
+![JOB1](img/job3_2.jpg)
+
+
+
+![JOB1](img/job3_3.jpg)
+
+
+
+![JOB1](img/job4.jpg)
+
+
+![JOB1](img/build.jpg)
