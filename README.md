@@ -15,10 +15,15 @@
 ### First we need of jenkins image for monitor our jobs . So here i use  Dockerfile to create jenkins image that we will use to create jenkins container.
 
 ![Dockerfile](img/Dockerfile.jpg)
+ 
+### Save the above Dokckerfile withount any extension 
 
-
-
+### Below command create a Jenkins docker image 
 ```
-### docker build -t vishnu . 
+docker build -t Image_name . 
+```
+### For launch the Jenkins container :
+```
+docker run -dit --name container_name -p 8081:8080 -v /var/run/docker.sock:/var/run/docker.sock  Image_name
 ```
 
