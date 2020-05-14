@@ -37,31 +37,32 @@ curl -sSl https://get.docker.com |sh
 yum install docker-ce --nobest
 ```
 
-
+### job one Trigger when developer push the content of webserver
 ![JOB1](img/job1.jpg)
 
 
-
+### Copy all github data in the vp folder
 ![JOB1](img/job1_2.jpg)
 
 
+### Job2 trigger after job1 successfully run and it check if web_vish_os are running our not if running then remove and copy the vp directory content to web directory for secure main content of vp and create a new container name of container is same 
 
-![JOB1](img/job2.jpg)
+![JOB2](img/job2.jpg)
 
-
-![JOB1](img/job3.jpg)
-
-
-
-![JOB1](img/job3_2.jpg)
+### Job3 trigger Job2 success . For checking the web server we use curl and check the web code if web code 200 or not.
+![JOB3](img/job3.jpg)
 
 
-
-![JOB1](img/job3_3.jpg)
+### And in the case systen is fail then automatic send email  notification to our Email so we configure the SMTP (email notification) setting  . in case we not run then goto our gmail setting true the less secure app 
+![JOB3](img/job3_2.jpg)
 
 
 
-![JOB1](img/job4.jpg)
+![JOB3](img/job3_3.jpg)
 
+### And run the job4 in fail state 
 
-![JOB1](img/build.jpg)
+![JOB4](img/job4.jpg)
+
+### for visual we us build pipeline plugin
+![JOB4](img/build.jpg)
